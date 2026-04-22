@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
+    <script src="corrupt.js"></script>
+    <audio autoplay loop>
+    <source src="assets/sleep.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</head>
+
+
+
+<body>
+    <article id="block">
+
+        <div style="padding: 50px;">
+            <center>
+                <img src="assets/welcomerotating.gif"
+                    style="width: 400px; height: auto; position: fixed; left: 35%; top: -50px">
+            </center>
+        </div>
+
+        <div class="window-container">
+            <div class="window" style="width: 500px">
+                <div class="title-bar">
+                    <div class="title-bar-text">
+                        README.txt
+                    </div>
+
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <ul class="nav-list">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">works</a></li>
+                        <li><a href="#">journal</a></li>
+                        <li><a href="#">music</a></li>
+                        <li><a href="#">games</a></li>
+                        <li><a href="#">collections</a></li>
+                        <li><a href="https://monkeyball-online.pages.dev/">
+                                <div class="animated-rainbow">???</div>
+
+                            </a></li>
+                        <li><a href="#">misc</a></li>
+                        <img src="/assets/transrights.png" alt="trans rights now!">
+                        <img src="/assets/palestine.gif " alt="free palestine button"
+                            style="width: 88px; height: auto;">
+                        <img src="/assets/ssss.png " alt="free palestine button" style="width: 88px; height: auto;">
+                        <img src="/assets/eatingchaps.gif" alt="free palestine button"
+                            style="width: 88px; height: auto;">
+
+
+                    </ul>
+
+                    <section class="field-row" style="justify-content: flex-end">
+
+                    </section>
+                </div>
+            </div>
+
+            <div class="window" style=" width: 500px">
+                <div class="title-bar">
+                    <div class="title-bar-text">
+                        jules.exe
+                    </div>
+
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <img src="https://pixelsafari.neocities.org/dividers/more/hangingstars.gif"
+                        style="width: 100%; padding-bottom: 0px;">
+                    <img src="assets/nekojiru.png">
+                    <h2 id="intro-title">Haii, I'm Jules</h2>
+                    <h3 id="intro-subtitle">(they/them) — aka "mewo" online</h3>
+
+                    <p id="intro-text">
+                        welcome to my blog site!
+                        
+                    </p>
+
+                    <h4 id="about-heading">about me</h4>
+                    <p id="about-text">
+                        i really like building websites, weird psychedelic games that don't make much sense, and fucking around with tech.
+                        I would love ot get into drawing, but i'm not great at using physical media
+                    </p>
+
+                    <h4 id="site-heading">O-NE</h4>
+                    <p id="site-text">
+                        I am currently working on a program called Project O-NE. This software allows you to create a digital
+                        link between our world and a strange universe that seems to exist parallel to ours. 
+                        I am not quite sure I understand it yet, but it appears that 
+                    </p>
+
+                    <h3 id="content-heading" style="color: red;">WARNING</h3>
+                    <p id="content-text" style="color: red;">
+                        Please, be careful with ON-E. This project is currently in early access and may have unexpected results.
+                    </p>    
+
+
+                    <section>
+                        <footer style="bottom: 0;">
+                        </footer>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- cool draggable window starts here -->
+        <div class="window floating-window" id="i" style="width: auto; top: 65%; left: 27%; position: fixed">
+            <div class="title-bar floating-handle">
+                <div class="title-bar-text">popup.exe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close" onclick="remove()"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <img src="popups/pop1.png" style="max-width: 35vh; height: auto;">
+            </div>
+        </div>
+
+        <div class="window floating-window" id="2" style="width: auto; top: 60%; left: 80%; position: fixed">
+            <div class="title-bar floating-handle">
+                <div class="title-bar-text">popup.exe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close" onclick="remove()"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <img src="popups/pop2.png" style="max-width: 30vh; height: auto; ">
+            </div>
+        </div>
+
+
+        <div class="window floating-window" id="3" style="width: auto; top: 25%; left: 75%; position: fixed">
+            <div class="title-bar floating-handle">
+                <div class="title-bar-text">huh </div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close" onclick="console.log('hi')"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <img src="assets/cat-kitty-2337546663.gif" style="max-width: 28vh; height: auto; ">
+            </div>
+        </div>
+
+        <img src="assets/2760716_1f94a-3059407344.png"
+            style="max-width: 26vh; height: auto; position: fixed; top: 74%; left: 55%;">
+</body>
+
+
+<footer class="win98-footer window">
+    © 2002 Jules
+    <p id="win98_clock"></p>
+</footer>
+
+
+
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const windows = document.querySelectorAll(".floating-window");
+        let topZ = 9999;
+
+        windows.forEach((win) => {
+            const handle = win.querySelector(".floating-handle");
+            if (!handle) return;
+
+            let isDragging = false;
+            let offsetX = 0;
+            let offsetY = 0;
+
+            function freezePosition() {
+                const rect = win.getBoundingClientRect();
+                win.style.left = rect.left + "px";
+                win.style.top = rect.top + "px";
+                win.style.transform = "none";
+                win.style.position = "fixed";
+            }
+
+            function bringToFront() {
+                topZ += 1;
+                win.style.zIndex = topZ;
+            }
+
+            handle.addEventListener("pointerdown", (e) => {
+                bringToFront();
+                freezePosition();
+
+                isDragging = true;
+                win.classList.add("dragging");
+
+                const rect = win.getBoundingClientRect();
+                offsetX = e.clientX - rect.left;
+                offsetY = e.clientY - rect.top;
+
+                handle.setPointerCapture(e.pointerId);
+                e.preventDefault();
+            });
+
+            handle.addEventListener("pointermove", (e) => {
+                if (!isDragging) return;
+                win.style.left = (e.clientX - offsetX) + "px";
+                win.style.top = (e.clientY - offsetY) + "px";
+            });
+
+            function stopDrag(e) {
+                isDragging = false;
+                win.classList.remove("dragging");
+                try { handle.releasePointerCapture(e.pointerId); } catch (_) { }
+            }
+
+            handle.addEventListener("pointerup", stopDrag);
+            handle.addEventListener("pointercancel", stopDrag);
+
+            // also allow click anywhere on the window to focus it
+            win.addEventListener("pointerdown", bringToFront);
+
+
+        });
+    });
+</script>
+
+
+
+
+</html>
